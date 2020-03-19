@@ -16,7 +16,6 @@
 /* Exported functions ------------------------------------------------------- */
 void tcp_client_connect(uint16_t _PortNumber,uint8_t *_IPAddress);
 
-void tcp_Client_Close(struct tcp_pcb *tpcb);
 void tcp_Client_SendString(struct tcp_pcb *tpcb,uint8_t * str , uint16_t len);
 void tcp_client_connection_close(struct tcp_pcb *tpcb);
 __weak void tcp_Client_Recieve(struct tcp_pcb *tpcb,uint8_t *Buf,uint32_t _Len);
